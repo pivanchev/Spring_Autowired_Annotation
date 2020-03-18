@@ -11,9 +11,7 @@ public class DrawingApp {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		Shape shape = (Shape)context.getBean("circle");
-		Shape shape1 = (Shape)context.getBean("triangle");
 		shape.draw();
-		shape1.draw();
 
 	}
 
